@@ -2,11 +2,17 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import WelcomeMessage from './components/WelcomeMessage';
+
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
+      <div>
+            <h1>Main App Content</h1>
+            <WelcomeMessage />  {/* Add the new component here */}
+      </div>
     <>
       <div>
         <a href="https://vite.dev" target="_blank">
