@@ -7,6 +7,7 @@ import Header from './components/Header';
 import MainContent from './components/MainContent';
 import Footer from './components/Footer';
 import UserProfile from './components/UserProfile';
+import Counter from "./components/Counter";
 
 
 
@@ -17,6 +18,7 @@ function App() {
     <> {/* Wrap everything in a single Fragment */}
       <div>
         <h1>Main App Content</h1>
+        <Counter />
         <WelcomeMessage /> {/* Add the new component here */}
       </div>
       <div>
