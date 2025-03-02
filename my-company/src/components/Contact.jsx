@@ -18,15 +18,25 @@ function Contact() {
 
   return (
     <div style={{ padding: '20px' }}>
-      <h1>Contact Us</h1>
-      <form onSubmit={handleSubmit}>
+      <h1 style={{ textAlign: 'center', color: '#333' }}>Contact Us</h1>
+      <form onSubmit={handleSubmit} style={{
+        display: 'flex',
+        flexDirection: 'column',
+        maxWidth: '400px',
+        margin: '0 auto',
+      }}>
         <input
           type="text"
           name="name"
           placeholder="Your Name"
           value={formData.name}
           onChange={handleChange}
-          style={{ display: 'block', margin: '10px 0' }}
+          style={{ 
+            padding: '10px',
+            margin: '10px 0',
+            border: '1px solid #ddd',
+            borderRadius: '5px',
+      }}
         />
         <input
           type="email"
@@ -34,16 +44,36 @@ function Contact() {
           placeholder="Your Email"
           value={formData.email}
           onChange={handleChange}
-          style={{ display: 'block', margin: '10px 0' }}
+          style={{
+            padding: '10px',
+            margin: '10px 0',
+            border: '1px solid #ddd',
+            borderRadius: '5px', 
+       }}
         />
         <textarea
           name="message"
           placeholder="Your Message"
           value={formData.message}
           onChange={handleChange}
-          style={{ display: 'block', margin: '10px 0' }}
+          style={{
+            padding: '10px',
+            margin: '10px 0',
+            border: '1px solid #ddd',
+            borderRadius: '5px',
+            height: '150px', 
+       }}
         />
-        <button type="submit">Send Message</button>
+        <button type="submit" style={{
+          backgroundColor: '#007bff',
+          color: 'white',
+          padding: '10px 20px',
+          border: 'none',
+          borderRadius: '5px',
+          cursor: 'pointer',
+      }}>
+        Send Message
+      </button>
       </form>
     </div>
   );
