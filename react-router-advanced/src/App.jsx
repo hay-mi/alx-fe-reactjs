@@ -43,6 +43,7 @@ function App() {
                 </ProtectedRoute>
               }
             />
+            <Route path="/blog/:id" element={<BlogPost />} />
           </Routes>
         </div>
       </Router>
