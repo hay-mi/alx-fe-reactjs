@@ -13,7 +13,7 @@ const FormikForm = () => (
     initialValues={{ username: "", email: "", password: "" }}
     validationSchema={validationSchema}
     onSubmit={(values) => {
-      // Here you would typically make an API call to register the user
+      
       console.log("User registered:", values);
     }}
   >

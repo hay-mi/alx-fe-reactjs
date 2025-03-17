@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* src/index.css */
+
+/* Custom Styles */
+
+/* Recipe Card Styles */
+.recipe-card {
+  @apply bg-white rounded shadow-md overflow-hidden;
+}
+
+.recipe-card-image {
+  @apply w-full h-48 object-cover; /* Adjust height as needed */
+}
+
+.recipe-card-content {
+  @apply p-4;
+}
+
+.recipe-card-title {
+  @apply text-lg font-semibold mb-2;
+}
+
+.recipe-card-button {
+  @apply bg-yellow-300 py-1 px-3 rounded text-sm inline-block;
+}
+
+/* Recipe Finder Styles */
+.recipe-finder-grid {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-4;
+}
+
+/* Search Bar Styles */
+.search-bar-form {
+  @apply flex w-full;
+}
+
+.search-bar-input {
+  @apply border rounded p-2 w-full;
+}
+
+.search-bar-button {
+  @apply bg-yellow-300 p-2 rounded;
+}
+
+/*Home page styles*/
+
+.home-container {
+  @apply p-4;
+  /* Add background image and styling here */
+  background-image: url("your-image-url.jpg"); /* Replace with your image URL */
+  background-size: cover; /* Adjust as needed: cover, contain, etc. */
+  background-position: center;
+  height: 500px; /* Adjust height as needed */
+  /* Add styles to make text readable over the image */
+  color: white; /* Or a color that contrasts well with your image */
+  text-shadow: 2px 2px 4px #000000; /* Optional: Add text shadow */
+}
+
+.home-title {
+  @apply text-2xl font-bold mb-4;
+}
+.navbar {
+  @apply flex justify-between items-center p-4 bg-gray-100;
+}
+
+.navbar-link {
+  @apply text-gray-700 hover:text-gray-900;
+}
+
+.navbar-link-margin {
+  @apply ml-4;
+}
