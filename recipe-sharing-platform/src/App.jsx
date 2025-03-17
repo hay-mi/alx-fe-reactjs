@@ -3,6 +3,8 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 import HomePage from "./components/HomePage";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import RecipeDetail from "./components/RecipeDetail";
 function App() {
   const [count, setCount] = useState(0);
 
@@ -11,6 +13,12 @@ function App() {
       <div>
         <HomePage />
       </div>
+      <Router>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/recipe/:id" element={<RecipeDetail />} />
+        </Routes>
+      </Router>
       <div className="text-blue-500 text-center p-4">
         <h1 className="text-3xl font-bold">Recipe Sharing Platform</h1>
       </div>
