@@ -9,7 +9,10 @@ function App() {
   return (
     <>
       <div className="App">
-        <h1>GitHub User Search</h1>
+        <h1 style={{ textAlign: "center", marginTop: "1rem" }}>
+          GitHub User Search
+        </h1>
+        <Search />
         {/* Components will be added here */}
       </div>
       <div>
