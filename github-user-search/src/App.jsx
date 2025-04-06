@@ -8,8 +8,9 @@ function App() {
 
   return (
     <>
-      <div>
-        <h1>GitHub User Search App</h1>
+      <div className="App">
+        <h1>GitHub User Search</h1>
+        {/* Components will be added here */}
       </div>
       <div>
         <a href="https://vite.dev" target="_blank">
